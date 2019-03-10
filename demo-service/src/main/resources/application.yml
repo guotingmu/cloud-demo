@@ -1,0 +1,23 @@
+server:
+  port: 8001
+
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: localhost:3306/demo?serverTimezone=UTC&?useUnicode=true&characterEncoding=utf8&useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: demo-service
+  security:
+    user:
+      name: test
+      password: 123456
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:8000/eureka/
+    fetch-registry: true
+    register-with-eureka: true

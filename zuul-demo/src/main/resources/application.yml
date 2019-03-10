@@ -1,0 +1,22 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: zuul
+  security:
+    user:
+      name: test
+      password: 123456
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:8000/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+zuul:
+  routes:
+    demo-service: /service/**
+    demo-api: /api/**
+  ignored-services: '*' # 忽略所有微服务
