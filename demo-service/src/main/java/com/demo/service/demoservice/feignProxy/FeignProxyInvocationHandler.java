@@ -1,4 +1,4 @@
-package com.feign.proxy.feignproxy;
+package com.demo.service.demoservice.feignProxy;
 
 import org.springframework.aop.support.AopUtils;
 import org.springframework.cglib.proxy.InvocationHandler;

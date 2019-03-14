@@ -1,4 +1,4 @@
-package com.feign.proxy.feignproxy;
+package com.demo.service.demoservice.feignProxy;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.context.annotation.Import;

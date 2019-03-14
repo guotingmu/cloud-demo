@@ -1,4 +1,4 @@
-package com.feign.proxy.feignproxy;
+package com.demo.service.demoservice.feignProxy;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;

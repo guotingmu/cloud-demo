@@ -1,4 +1,4 @@
-package com.feign.proxy.feignproxy;
+package com.demo.service.demoservice.feignProxy;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
