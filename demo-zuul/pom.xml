@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.demo.zuul</groupId>
-	<artifactId>zuul</artifactId>
+	<artifactId>demo-zuul</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>zuul</name>
+	<name>demo-zuul</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

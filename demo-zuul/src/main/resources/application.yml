@@ -2,7 +2,7 @@ server:
   port: 8002
 spring:
   application:
-    name: zuul
+    name: demo-zuul
   security:
     user:
       name: test

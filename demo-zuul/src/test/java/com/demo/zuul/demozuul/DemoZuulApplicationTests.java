@@ -1,4 +1,4 @@
-package com.demo.zuul;
+package com.demo.zuul.demozuul;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ZuulApplicationTests {
+public class DemoZuulApplicationTests {
 
 	@Test
 	public void contextLoads() {
