@@ -2,7 +2,6 @@ package com.demo.service.demoservice;
 
 
 import com.demo.api.demoapi.service.TestService;
-import com.demo.service.demoservice.mapper.TestMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

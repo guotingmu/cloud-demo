@@ -1,21 +1,24 @@
 package com.demo.service.demoservice.serviceImpl;
 
+import com.demo.api.demoapi.entity.User;
 import com.demo.api.demoapi.service.TestService;
-import com.demo.service.demoservice.mapper.TestMapper;
+import com.demo.service.demoservice.config.TestJavaConfigBean;
+import com.demo.service.demoservice.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Service
+@RestController
 public class TestServiceImpl implements TestService {
 
     @Autowired
-    TestMapper mapper;
+    UserMapper userMapper;
 
+    @Override
     @GetMapping(value = "/test")
-    public void test() {
-        System.out.println("Begin！");
-        mapper.test();
-        System.out.println("Hello World");
+    public User test() {
+       User user = userMapper.selectByPrimaryKey(new Long(1));
+       return user;
     }
 }
